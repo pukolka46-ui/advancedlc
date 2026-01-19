@@ -1,33 +1,192 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>AdvanceDLC</title>
+  <meta charset="UTF-8" />
+  <title>AdvanceDLC — официальный сайт</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #0b0b0b;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      padding: 0;
     }
-    h1 {
-      font-size: 64px;
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #0f2027, #000);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 24px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
       color: #00ffd5;
     }
-    p {
-      font-size: 20px;
-      opacity: 0.8;
+
+    nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: 800;
+      color: #00ffd5;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #ccc;
+      max-width: 600px;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn-primary {
+      background: #00ffd5;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: #00c7a8;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #444;
+    }
+
+    .btn-secondary:hover {
+      border-color: #00ffd5;
+      color: #00ffd5;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 30px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #00ffd5;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #00ffd5;
+    }
+
+    .card p {
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+      font-size: 13px;
     }
   </style>
 </head>
 <body>
-  <div>
-    <h1>AdvanceDLC</h1>
-    <p>Официальный сайт</p>
+
+<header>
+  <div class="logo">AdvanceDLC</div>
+  <nav>
+    <a href="#features">Возможности</a>
+    <a href="#about">О проекте</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>AdvanceDLC</h1>
+  <p>
+    Официальный сайт проекта AdvanceDLC.  
+    Современные решения, скорость, стабильность и развитие.
+  </p>
+  <div class="buttons">
+    <button class="btn btn-primary">Начать</button>
+    <button class="btn btn-secondary">Документация</button>
   </div>
-</body>
-</html>
+</div>
+
+<section id="features">
+  <div class="features">
+    <div class="card">
+      <h3>🚀 Быстро</h3>
+      <p>Минимальная загрузка, мгновенный отклик и оптимизация под любые устройства.</p>
+    </div>
+    <div class="card">
+      <h3>🛡 Безопасно</h3>
+      <p>Чистая архитектура, никаких лишних скриптов и уязвимостей.</p>
+    </div>
+    <div class="card">
+      <h3>⚙ Гибко</h3>
+      <p>Легко расширяется, дорабатывается и масштабируется.</p>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 style="margin-bottom:20px;color:#00ffd5;">О проекте</h2>
+  <p style="color:#bbb;max-width:700px;
